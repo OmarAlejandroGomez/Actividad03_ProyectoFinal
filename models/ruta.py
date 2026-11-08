@@ -63,6 +63,16 @@ class Ruta:
     def contiene(self, estacion):
         return self._posicion(estacion) != -1
     
+    def contar_tramos(self, origen, destino):
+        if not self.contiene(origen):
+            raise EstacionNoPerteneceARutaError(origen.get_nombre(), self._codigo)
+        if not self.contiene(destino):
+            raise EstacionNoPerteneceARutaError(destino.get_nombre(), self._codigo)
+        if origen.get_codigo() == destino.get_codigo():
+            raise ValueError("El origen y el destino deben ser estaciones diferentes.")
+    
+        return abs(self._posicion(destino) - self._posicion(origen))
+    
     def validar_horario(self, hora):
         return self._programacion.opera_a(hora)
     
