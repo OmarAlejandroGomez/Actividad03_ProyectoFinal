@@ -1,5 +1,5 @@
 from models.vehiculo import Vehiculo
-
+#bus
 
 class BusTroncal(Vehiculo):
 
