@@ -71,7 +71,7 @@ class SistemaTransporte:
             raise ValueError(f"Ya existe un vehículo con el código {vehiculo.get_codigo()}.")
         if ruta not in self.rutas:
             raise ValueError(f"La ruta {ruta.get_codigo()} no está registrada en el sistema.")
-        vehiculo.asignar_ruta
+        vehiculo.asignar_ruta (ruta)
         self._flota.append(vehiculo)
     
     def realizar_viaje(self, tarjeta, vehiculo, origen, destino, hora):

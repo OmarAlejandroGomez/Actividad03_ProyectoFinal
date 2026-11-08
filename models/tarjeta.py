@@ -1,5 +1,4 @@
-
-
+from models.excepciones import TarjetaBloqueadaError, SaldoInsuficienteError
 
 class Tarjeta:
 
@@ -29,7 +28,8 @@ class Tarjeta:
     def get_motivo_bloqueo(self):
         return self._motivo_bloqueo
 
-    # Bloquear y desbloquear: el diagrama define los atributos, pero estos métodos permiten modificarlos
+    # Bloquear y desbloquear
+
     def bloquear(self, motivo):
         if motivo.strip() == "":
             raise ValueError("Debe indicar el motivo del bloqueo")
