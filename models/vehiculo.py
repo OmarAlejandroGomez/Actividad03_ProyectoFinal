@@ -1,5 +1,7 @@
+from abc import ABC, abstractmethod
+from models.ruta import Ruta
 
-class Vehiculo:
+class Vehiculo(ABC):
     
     def __init__(self, codigo, capacidad):
         self.set_codigo(codigo)
@@ -48,4 +50,21 @@ class Vehiculo:
         else:
             raise ValueError("El vehículo no tiene una ruta asignada.")
     
+    # Metodos abstractos
+    @abstractmethod
+    def calcular_tarifa(self, tarifa_base):
+        pass
     
+    @abstractmethod
+    def tiempo_estimado(self, tramos):
+        pass
+    
+    # Método para mostrar información del vehículo
+    def descripcion(self):
+        if self._ruta is None:
+            ruta = "Sin ruta asignada"
+        else:
+            ruta = f"{self._ruta.get_codigo()} - {self._ruta.get_nombre()}"
+        return (
+            f"Vehiculo {self._codigo} - Capacidad: {self._capacidad} pasajeros - Ruta: {ruta}"
+        )
