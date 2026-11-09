@@ -61,7 +61,7 @@ Actividad03_ProyectoFinal/
 
 ## Diagrama de clases
 
-El archivo editable está en [`docs/diagrama_clases.drawio`](docs/diagrama_clases.drawio). Se abre en [app.diagrams.net](https://app.diagrams.net) 
+El archivo editable está en [`documents/diagrama_clases.drawio`](documents/diagrama_clases.drawio). Se abre en [app.diagrams.net](https://app.diagrams.net) 
 
 ## Cómo se cumplen los requerimientos
 
