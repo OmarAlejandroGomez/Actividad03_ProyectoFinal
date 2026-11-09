@@ -38,19 +38,7 @@ class Vehiculo(ABC):
         else:
             raise ValueError("Debe indicar una ruta existente.")
     
-    def calcular_tarifa(self, tarifa_base):
-        if self._ruta is not None:
-            return tarifa_base * self._ruta.get_distancia()
-        else:
-            raise ValueError("El vehículo no tiene una ruta asignada.")
-        
-    def tiempo_estimado(self, tramos):
-        if self._ruta is not None:
-            return self._ruta.calcular_tiempo_estimado(tramos)
-        else:
-            raise ValueError("El vehículo no tiene una ruta asignada.")
-    
-    # Metodos abstractos
+        # Metodos abstractos
     @abstractmethod
     def calcular_tarifa(self, tarifa_base):
         pass
