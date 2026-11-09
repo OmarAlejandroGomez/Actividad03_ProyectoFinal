@@ -97,7 +97,7 @@ def agregar_vehiculo(sistema):
     if ruta is None:
         return
 
-    print("Tipo de vehículo: 1. Bus troncal   2. Bus alimentador")
+    print("Tipo de vehículo: 1. Bus troncal   2. Bus alimentador   3. Cable Bus")
     tipo = input("Elige el tipo: ")
     if tipo != "1" and tipo != "2" and tipo != "3":
         print("Tipo de vehículo inválido")
