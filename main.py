@@ -5,6 +5,7 @@ from models.estacion import Estacion
 from models.ruta import Ruta
 from models.bus_troncal import BusTroncal
 from models.bus_alimentador import BusAlimentador
+from models.cable_bus import CableBus
 from models.utilidades import convertir_hora
 from models.excepciones import (TarjetaBloqueadaError,SaldoInsuficienteError,EstacionNoPerteneceARutaError,FueraDeHorarioError)
 
@@ -98,7 +99,7 @@ def agregar_vehiculo(sistema):
 
     print("Tipo de vehículo: 1. Bus troncal   2. Bus alimentador")
     tipo = input("Elige el tipo: ")
-    if tipo != "1" and tipo != "2":
+    if tipo != "1" and tipo != "2" and tipo != "3":
         print("Tipo de vehículo inválido")
         return
 
@@ -111,10 +112,15 @@ def agregar_vehiculo(sistema):
                 cuerpos = int(input("Ingresa la cantidad de cuerpos: "))
                 puertas_izquierdas = pedir_si_no("¿Tiene puertas del lado izquierdo?")
                 vehiculo = BusTroncal(codigo, capacidad, cuerpos, puertas_izquierdas)
-            else:
+            if tipo == "2":
                 barrio = input("Ingresa el barrio que atiende: ")
                 paradas_fijas = int(input("Ingresa la cantidad de paradas fijas: "))
                 vehiculo = BusAlimentador(codigo, capacidad, barrio, paradas_fijas)
+              
+            else:
+                parada = input("Ingresa la parada única: ")
+                minutos_trayecto = int(input("Ingresa los minutos de trayecto: "))
+                vehiculo = CableBus(codigo, capacidad, parada, minutos_trayecto)
 
             sistema.agregar_vehiculo(vehiculo, ruta)
             print("Vehículo agregado con éxito")
