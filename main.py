@@ -362,8 +362,10 @@ def ejecutar_demostracion(sistema, pasajero_controller, tarjeta_controller):
     print("\n2) Flota (cada vehículo calcula su tarifa y tiempo de forma distinta)")
     bus_troncal = BusTroncal("BT-01", 80, 2, True)
     bus_alimentador = BusAlimentador("BA-01", 30, "Suba", 6)
+    cable_bus = CableBus("CB-01", 20, "Paraíso", 1)
     sistema.agregar_vehiculo(bus_troncal, troncal)
     sistema.agregar_vehiculo(bus_alimentador, alimentadora)
+    sistema.agregar_vehiculo(cable_bus, cable)
     mostrar_flota(sistema)
 
     print("\n3) Pasajeros y tarjetas (todas las tarjetas son iguales: pagan la tarifa completa)")
