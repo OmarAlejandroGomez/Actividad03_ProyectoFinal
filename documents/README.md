@@ -72,3 +72,7 @@ El archivo editable está en [`docs/diagrama_clases.drawio`](docs/diagrama_clase
 | Tres clases que heredan de una común | `BusTroncal`, `BusAlimentador` y `CableBus` heredan de `Vehiculo` |
 | Constructores | Todas las clases tienen `__init__`. Las hijas invocan `super().__init__(codigo, capacidad)` |
 | Encapsulamiento | Los atributos de las entidades usan prefijo `_` y se acceden mediante métodos `get_`/`set_`
+
+## Uso de la IA
+
+Para este trabajo, se hizo uso de la IA (Claude, Gemini, la integrada con VSCode) con el fin de facilitar la escritura del código, revisar los errores presentados, generar una revisión general del sistema planteado y adelantar validaciones de coherencia y sintaxis. 
