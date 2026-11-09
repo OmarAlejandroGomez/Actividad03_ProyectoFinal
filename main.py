@@ -38,7 +38,7 @@ def elegir_ruta(sistema):
     return elegir_con_descripcion(rutas, descripciones, "Primero debe registrar una ruta.")
 
 def elegir_vehiculo(vehiculos, mensaje_vacio):
-    descripciones = [f"{vehiculo.get_codigo()} (Capacidad: {vehiculo.get_capacidad()}" for vehiculo in vehiculos]
+    descripciones = [f"{vehiculo.get_codigo()} (Capacidad: {vehiculo.get_capacidad()})" for vehiculo in vehiculos]
     return elegir_con_descripcion(vehiculos, descripciones, mensaje_vacio)
 
 def pedir_si_no(mensaje):
@@ -58,7 +58,7 @@ def agregar_estacion(sistema):
     accesible = pedir_si_no("¿La estación es accesible?")
     
     try:
-        sistema.agregar_estacion(codigo, nombre, zona, accesible)
+        sistema.agregar_estacion(Estacion(codigo, nombre, zona, accesible))
         print("Estación agregada exitosamente.")
         return
     except ValueError as error:
@@ -112,7 +112,7 @@ def agregar_vehiculo(sistema):
                 cuerpos = int(input("Ingresa la cantidad de cuerpos: "))
                 puertas_izquierdas = pedir_si_no("¿Tiene puertas del lado izquierdo?")
                 vehiculo = BusTroncal(codigo, capacidad, cuerpos, puertas_izquierdas)
-            if tipo == "2":
+            elif tipo == "2":
                 barrio = input("Ingresa el barrio que atiende: ")
                 paradas_fijas = int(input("Ingresa la cantidad de paradas fijas: "))
                 vehiculo = BusAlimentador(codigo, capacidad, barrio, paradas_fijas)
@@ -347,13 +347,16 @@ def ejecutar_demostracion(sistema, pasajero_controller, tarjeta_controller):
     calle100 = Estacion("E02", "Calle 100", "Norte", True)
     calle72 = Estacion("E03", "Calle 72", "Centro", False)
     centro = Estacion("E04", "Centro", "Centro", True)
-    for estacion in (portal, calle100, calle72, centro):
+    mirador = Estacion("E05", "Mirador Paraiso", "Sur", True) 
+    for estacion in (portal, calle100, calle72, centro, mirador):
         sistema.agregar_estacion(estacion)
 
     troncal = Ruta("T01", "Troncal Norte-Centro", [portal, calle100, calle72, centro], "05:00", "22:00", 10)
     alimentadora = Ruta("A01", "Alimentadora Suba", [portal, calle100], "06:00", "20:00", 15)
+    cable = Ruta("C01", "Cable Paraíso", [centro, mirador], "05:00", "22:00", 1)
     sistema.agregar_ruta(troncal)
     sistema.agregar_ruta(alimentadora)
+    sistema.agregar_ruta(cable) 
     mostrar_rutas(sistema)
 
     print("\n2) Flota (cada vehículo calcula su tarifa y tiempo de forma distinta)")
@@ -379,6 +382,8 @@ def ejecutar_demostracion(sistema, pasajero_controller, tarjeta_controller):
     print("\n4) Viajes válidos")
     intentar_viaje(sistema, tarjetas["1001"], bus_troncal, portal, centro, "08:30")
     intentar_viaje(sistema, tarjetas["1003"], bus_troncal, portal, calle72, "08:40")
+    print("El cable bus cobra lo mismo que el alimentador y va directo a su única parada")
+    intentar_viaje(sistema, tarjetas["1003"], cable_bus, centro, mirador, "10:00")
     print("El alimentador no cobra: registra el ingreso con la tarjeta, pero el saldo no cambia")
     intentar_viaje(sistema, tarjetas["1004"], bus_alimentador, portal, calle100, "09:00")
     print(tarjetas["1004"].descripcion())
