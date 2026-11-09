@@ -62,7 +62,7 @@ class SistemaTransporte:
         for estacion in ruta.get_estaciones():
             if estacion not in self.estaciones:
                 raise ValueError(f"La estación {estacion.get_codigo()} no está registrada en el sistema.")  
-            self._rutas.append(ruta)
+            self.rutas.append(ruta)
     
     def agregar_vehiculo(self, vehiculo, ruta):
         if not isinstance(vehiculo, Vehiculo):
@@ -72,7 +72,7 @@ class SistemaTransporte:
         if ruta not in self.rutas:
             raise ValueError(f"La ruta {ruta.get_codigo()} no está registrada en el sistema.")
         vehiculo.asignar_ruta (ruta)
-        self._flota.append(vehiculo)
+        self.flota.append(vehiculo)
     
     def realizar_viaje(self, tarjeta, vehiculo, origen, destino, hora):
         if vehiculo not in self.flota:
@@ -101,7 +101,7 @@ class SistemaTransporte:
         return total
     
     def reporte_estaciones(self):
-        ordenadas = sorted(self._estaciones, key=lamda estacion: estacion.get_ingresos(), reverse=True)
+        ordenadas = sorted(self._estaciones, key=lambda estacion: estacion.get_ingresos(), reverse=True)
         return [estacion.descripcion() for estacion in ordenadas]
     
 
