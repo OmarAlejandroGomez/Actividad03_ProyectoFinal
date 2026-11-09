@@ -1,0 +1,299 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="uml" name="Diagrama de clases">
+    <mxGraphModel dx="1717" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pasajeroctl" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;swimlaneFillColor=#ffffff;" value="PasajeroController" vertex="1">
+          <mxGeometry height="144" width="300" x="51" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajeroctl_a" parent="pasajeroctl" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ pasajeros" vertex="1">
+          <mxGeometry height="24" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajeroctl_l" parent="pasajeroctl" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajeroctl_m" parent="pasajeroctl" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__()&lt;br&gt;+ add_pasajero(documento, nombre, perfil): Pasajero&lt;br&gt;+ buscar_pasajero(documento): Pasajero&lt;br&gt;+ get_pasajeros()" vertex="1">
+          <mxGeometry height="72" width="300" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjetactl" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f5f5f5;strokeColor=#666666;swimlaneFillColor=#ffffff;" value="TarjetaController" vertex="1">
+          <mxGeometry height="144" width="300" x="440" y="41" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjetactl_a" parent="tarjetactl" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ tarjetas" vertex="1">
+          <mxGeometry height="24" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjetactl_l" parent="tarjetactl" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjetactl_m" parent="tarjetactl" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__()&lt;br&gt;+ add_tarjeta(pasajero, numero): Tarjeta&lt;br&gt;+ buscar_tarjeta(numero): Tarjeta&lt;br&gt;+ get_tarjetas()" vertex="1">
+          <mxGeometry height="72" width="300" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajero" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;" value="Pasajero" vertex="1">
+          <mxGeometry height="208" width="300" x="51" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajero_a" parent="pasajero" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# documento&lt;br&gt;# nombre&lt;br&gt;# perfil&lt;br&gt;# tarjeta" vertex="1">
+          <mxGeometry height="72" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajero_l" parent="pasajero" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="pasajero_m" parent="pasajero" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(documento, nombre, perfil)&lt;br&gt;+ get/set documento, nombre, perfil&lt;br&gt;+ get_tarjeta()&lt;br&gt;+ vincular_tarjeta(tarjeta)&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="88" width="300" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjeta" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;" value="Tarjeta" vertex="1">
+          <mxGeometry height="304" width="300" x="440" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjeta_a" parent="tarjeta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# numero&lt;br&gt;# saldo&lt;br&gt;# bloqueado&lt;br&gt;# motivo_bloqueo" vertex="1">
+          <mxGeometry height="72" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjeta_l" parent="tarjeta" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="tarjeta_m" parent="tarjeta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(numero)&lt;br&gt;+ get/set numero&lt;br&gt;+ get_saldo()&lt;br&gt;+ get_bloqueado()&lt;br&gt;+ get_motivo_bloqueo()&lt;br&gt;+ bloquear(motivo)&lt;br&gt;+ desbloquear()&lt;br&gt;+ recargar(monto)&lt;br&gt;+ validar_pago(tarifa)&lt;br&gt;+ cobrar(tarifa)&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="184" width="300" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="viaje" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;" value="Viaje" vertex="1">
+          <mxGeometry height="272" width="340" x="410" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="viaje_a" parent="viaje" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# tarjeta&lt;br&gt;# vehiculo&lt;br&gt;# origen&lt;br&gt;# destino&lt;br&gt;# hora&lt;br&gt;# valor&lt;br&gt;# minutos" vertex="1">
+          <mxGeometry height="96" width="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="viaje_l" parent="viaje" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="viaje_m" parent="viaje" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(tarjeta, vehiculo, origen, destino, hora, valor, minutos)&lt;br&gt;+ get_tarjeta()&amp;nbsp;&lt;div&gt;+ get_vehiculo()&lt;div&gt;+ get_origen()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ get_destino()&lt;br&gt;+ get_hora()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ get_valor()&lt;/div&gt;&lt;div&gt;+ get_minutos()&lt;br&gt;+ resumen()&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="128" width="340" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="sistema" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#fff2cc;strokeColor=#d6b656;swimlaneFillColor=#ffffff;" value="SistemaTransporte" vertex="1">
+          <mxGeometry height="330" width="340" x="840" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sistema_a" parent="sistema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# nombre&lt;br&gt;# tarifa_base&lt;br&gt;+ estaciones&lt;br&gt;+ rutas&lt;br&gt;+ flota&lt;br&gt;+ viajes]" vertex="1">
+          <mxGeometry height="104" width="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sistema_l" parent="sistema" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="sistema_m" parent="sistema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(nombre, tarifa_base)&lt;br&gt;+ get/set nombre, tarifa_base&lt;br&gt;+ get_estaciones()&lt;div&gt;+ get_rutas()&lt;/div&gt;&lt;div&gt;+ get_flota()&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ get_viajes()&lt;br&gt;+ agregar_estacion(estacion)&lt;br&gt;+ agregar_ruta(ruta)&lt;br&gt;+ agregar_vehiculo(vehiculo, ruta)&lt;br&gt;+ realizar_viaje(tarjeta, vehiculo, origen, destino, hora)&lt;br&gt;+ recaudo_total()&lt;br&gt;+ reporte_estaciones()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="178" width="340" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="estacion" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;" value="Estacion" vertex="1">
+          <mxGeometry height="224" width="280" x="1290" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="estacion_a" parent="estacion" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# codigo&lt;br&gt;# nombre&lt;br&gt;# zona&lt;br&gt;# accesible&lt;br&gt;# ingresos" vertex="1">
+          <mxGeometry height="88" width="280" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="estacion_l" parent="estacion" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="280" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="estacion_m" parent="estacion" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(codigo, nombre, zona, accesible)&lt;br&gt;+ get/set codigo, nombre, zona, accesible&lt;br&gt;+ get_ingresos(): int&lt;br&gt;+ registrar_ingreso()&lt;br&gt;+ descripcion(): str" vertex="1">
+          <mxGeometry height="88" width="280" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="ruta" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;" value="Ruta" vertex="1">
+          <mxGeometry height="272" width="370" x="1290" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ruta_a" parent="ruta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# codigo&lt;br&gt;# nombre&lt;br&gt;# estaciones&lt;br&gt;# programacion" vertex="1">
+          <mxGeometry height="72" width="370" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ruta_l" parent="ruta" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="370" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="ruta_m" parent="ruta" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(codigo, nombre, estaciones, hora_inicio, hora_fin, frecuencia)&lt;br&gt;+ get/set codigo, nombre, estaciones&lt;br&gt;+ get_programacion(): ProgramacionHoraria&lt;br&gt;- _posicion(estacion)&lt;br&gt;+ contiene(estacion)&lt;br&gt;+ contar_tramos(origen, destino)&lt;br&gt;+ validar_horario(hora)&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="152" width="370" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="programacion" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;swimlaneFillColor=#ffffff;" value="ProgramacionHoraria" vertex="1">
+          <mxGeometry height="224" width="260" x="1345" y="641" as="geometry" />
+        </mxCell>
+        <mxCell id="programacion_a" parent="programacion" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# hora_inicio&lt;br&gt;# hora_fin&lt;br&gt;# frecuencia" vertex="1">
+          <mxGeometry height="56" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="programacion_l" parent="programacion" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="programacion_m" parent="programacion" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(hora_inicio, hora_fin, frecuencia)&lt;br&gt;+ get_hora_inicio(), get_hora_fin()&lt;div&gt;+ set_horas(hora_inicio, hora_fin)&lt;br&gt;+ get/set frecuencia&lt;br&gt;+ opera_a(hora)&lt;br&gt;+ proximas_salidas(desde, cantidad)&lt;br&gt;+ descripcion()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="260" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="vehiculo" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="&lt;i&gt;Vehiculo (&lt;/i&gt;abstract&lt;i&gt;)&lt;/i&gt;" vertex="1">
+          <mxGeometry height="224" width="340" x="840" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="vehiculo_a" parent="vehiculo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# codigo&lt;br&gt;# capacidad&lt;br&gt;# ruta" vertex="1">
+          <mxGeometry height="56" width="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vehiculo_l" parent="vehiculo" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="8" width="340" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="vehiculo_m" parent="vehiculo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(codigo, capacidad)&lt;br&gt;+ get/set codigo, capacidad&lt;br&gt;+ get_ruta()&lt;br&gt;+ asignar_ruta(ruta)&lt;br&gt;&lt;i&gt;+ calcular_tarifa(tarifa_base)&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ tiempo_estimado(tramos)&lt;/i&gt;&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="120" width="340" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="troncal" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="BusTroncal" vertex="1">
+          <mxGeometry height="192" width="310" x="506" y="923" as="geometry" />
+        </mxCell>
+        <mxCell id="troncal_a" parent="troncal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# cuerpos&lt;br&gt;# puertas_izquierdas" vertex="1">
+          <mxGeometry height="40" width="310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="troncal_l" parent="troncal" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="8" width="310" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="troncal_m" parent="troncal" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(codigo, capacidad, cuerpos, puertas_izquierdas)&lt;br&gt;+ get/set cuerpos, puertas_izquierdas&lt;br&gt;+ lado_de_abordaje()&lt;br&gt;+ calcular_tarifa(tarifa_base)&lt;br&gt;+ tiempo_estimado(tramos)&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="104" width="310" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="alimentador" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="BusAlimentador" vertex="1">
+          <mxGeometry height="192" width="300" x="847" y="923" as="geometry" />
+        </mxCell>
+        <mxCell id="alimentador_a" parent="alimentador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# barrio&lt;br&gt;# paradas_fijas" vertex="1">
+          <mxGeometry height="40" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="alimentador_l" parent="alimentador" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="alimentador_m" parent="alimentador" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(codigo, capacidad, barrio, paradas_fijas)&lt;br&gt;+ get/set barrio, paradas_fijas&lt;br&gt;+ cambiar_barrio(nuevo_barrio)&lt;br&gt;+ calcular_tarifa(tarifa_base)&lt;br&gt;+ tiempo_estimado(tramos)&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="104" width="300" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="cable" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;swimlaneFillColor=#ffffff;" value="CableBus" vertex="1">
+          <mxGeometry height="192" width="300" x="1180" y="923" as="geometry" />
+        </mxCell>
+        <mxCell id="cable_a" parent="cable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="# parada&lt;br&gt;# minutos_trayecto" vertex="1">
+          <mxGeometry height="40" width="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cable_l" parent="cable" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="8" width="300" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cable_m" parent="cable" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ __init__(codigo, capacidad, parada, minutos_trayecto)&lt;br&gt;+ get/set parada, minutos_trayecto&lt;br&gt;+ llega_a(nombre_estacion)&lt;br&gt;+ calcular_tarifa(tarifa_base)&lt;br&gt;+ tiempo_estimado(tramos)&lt;br&gt;+ descripcion()" vertex="1">
+          <mxGeometry height="104" width="300" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="terror" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;swimlaneFillColor=#ffffff;" value="TransporteError (excepciones)" vertex="1">
+          <mxGeometry height="96" width="260" x="875" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="terror_a" parent="terror" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="" vertex="1">
+          <mxGeometry height="24" width="260" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="terror_l" parent="terror" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="terror_m" parent="terror" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="Hereda de Exception" vertex="1">
+          <mxGeometry height="24" width="260" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="ex1" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;swimlaneFillColor=#ffffff;" value="TarjetaBloqueadaError" vertex="1">
+          <mxGeometry height="112" width="250" x="315" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="ex1_a" parent="ex1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ numero&lt;br&gt;+ motivo" vertex="1">
+          <mxGeometry height="40" width="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ex1_l" parent="ex1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ex1_m" parent="ex1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="«lanzada por» Tarjeta.cobrar()" vertex="1">
+          <mxGeometry height="24" width="250" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="ex2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;swimlaneFillColor=#ffffff;" value="SaldoInsuficienteError" vertex="1">
+          <mxGeometry height="128" width="230" x="608" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="ex2_a" parent="ex2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ numero&lt;br&gt;+ saldo&lt;br&gt;+ valor" vertex="1">
+          <mxGeometry height="56" width="230" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ex2_l" parent="ex2" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="8" width="230" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="ex2_m" parent="ex2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="«lanzada por» Tarjeta.cobrar()" vertex="1">
+          <mxGeometry height="24" width="230" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="ex3" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;swimlaneFillColor=#ffffff;" value="EstacionNoPerteneceARutaError" vertex="1">
+          <mxGeometry height="112" width="250" x="880" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="ex3_a" parent="ex3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ nombre_estacion&lt;br&gt;+ codigo_ruta" vertex="1">
+          <mxGeometry height="40" width="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ex3_l" parent="ex3" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="8" width="250" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ex3_m" parent="ex3" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="«lanzada por» Ruta.contar_tramos()" vertex="1">
+          <mxGeometry height="24" width="250" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="ex4" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fontSize=12;fillColor=#f8cecc;strokeColor=#b85450;swimlaneFillColor=#ffffff;" value="FueraDeHorarioError" vertex="1">
+          <mxGeometry height="112" width="270" x="1182" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="ex4_a" parent="ex4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="+ codigo_ruta&lt;br&gt;+ hora" vertex="1">
+          <mxGeometry height="40" width="270" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ex4_l" parent="ex4" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="8" width="270" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ex4_m" parent="ex4" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;fontFamily=Helvetica;" value="«lanzada por» SistemaTransporte.realizar_viaje()" vertex="1">
+          <mxGeometry height="24" width="270" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="r0" edge="1" parent="1" source="troncal" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="vehiculo" value="">
+          <mxGeometry relative="1" x="-0.226" as="geometry">
+            <Array as="points">
+              <mxPoint x="659" y="880" />
+              <mxPoint x="925" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r1" edge="1" parent="1" source="alimentador" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="vehiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" edge="1" parent="1" source="cable" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="vehiculo" value="">
+          <mxGeometry relative="1" x="-0.3842" as="geometry">
+            <Array as="points">
+              <mxPoint x="1330" y="880" />
+              <mxPoint x="1095" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" edge="1" parent="1" source="ex1" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="terror" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" edge="1" parent="1" source="ex2" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="terror" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" edge="1" parent="1" source="ex3" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="terror" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" edge="1" parent="1" source="ex4" style="endArrow=block;endSize=14;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="terror" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" edge="1" parent="1" source="ruta" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=1;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="programacion" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" edge="1" parent="1" source="ruta" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="estacion" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" edge="1" parent="1" source="sistema" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.15;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="estacion" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" edge="1" parent="1" source="sistema" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.15;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="ruta" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" edge="1" parent="1" source="sistema" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="vehiculo" value="flota">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r12" edge="1" parent="1" source="sistema" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.85;exitDx=0;exitDy=0;entryX=1;entryY=0.15;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="viaje" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13" edge="1" parent="1" source="vehiculo" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.85;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="ruta" value="recorre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r14" edge="1" parent="1" source="viaje" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="tarjeta" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r15" edge="1" parent="1" source="viaje" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.6;exitDx=0;exitDy=0;entryX=0;entryY=0.6;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="vehiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r16" edge="1" parent="1" source="pasajero" style="endArrow=open;endSize=10;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="tarjeta" value="titular">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r17" edge="1" parent="1" source="pasajeroctl" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="pasajero" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r18" edge="1" parent="1" source="tarjetactl" style="endArrow=open;endSize=10;startArrow=diamondThin;startSize=16;startFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=11;labelBackgroundColor=#ffffff;" target="tarjeta" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYaC52DbsQzpLVVFnMmW-1" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=20;fontStyle=1;strokeColor=none;fillColor=none;" value="Diagrama de clases&lt;br&gt;Sistema de Transporte" vertex="1">
+          <mxGeometry height="60" width="290" x="40" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="OYaC52DbsQzpLVVFnMmW-2" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;spacingLeft=8;fontSize=11;fillColor=#fffde7;strokeColor=#b0a060;" value="Convenciones&lt;br&gt;&lt;div&gt;&lt;b&gt;+&lt;/b&gt; público &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&lt;/b&gt; privado&lt;/div&gt;&lt;div&gt;&lt;b&gt;#&lt;/b&gt; protegido&amp;nbsp;&lt;br&gt;&lt;i&gt;cursiva&lt;/i&gt;: clase o método abstracto&lt;br&gt;◆ composición &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;◇ agregación &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;→ asociación &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;▷ herencia&lt;/div&gt;" vertex="1">
+          <mxGeometry height="128" width="270" x="40" y="1030" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
