@@ -1,3 +1,4 @@
+from models import ruta
 from models.estacion import Estacion
 from models.ruta import Ruta
 from models.vehiculo import Vehiculo
@@ -62,7 +63,7 @@ class SistemaTransporte:
         for estacion in ruta.get_estaciones():
             if estacion not in self.estaciones:
                 raise ValueError(f"La estación {estacion.get_codigo()} no está registrada en el sistema.")  
-            self.rutas.append(ruta)
+        self.rutas.append(ruta)
     
     def agregar_vehiculo(self, vehiculo, ruta):
         if not isinstance(vehiculo, Vehiculo):
@@ -91,7 +92,7 @@ class SistemaTransporte:
         
         minutos = vehiculo.tiempo_estimado(tramos)
         viaje = Viaje(tarjeta, vehiculo, origen, destino, hora, valor, minutos)
-        self._viajes.append(viaje)
+        self.viajes.append(viaje)
         return viaje
     
     def recaudo_total(self):
@@ -101,7 +102,7 @@ class SistemaTransporte:
         return total
     
     def reporte_estaciones(self):
-        ordenadas = sorted(self._estaciones, key=lambda estacion: estacion.get_ingresos(), reverse=True)
+        ordenadas = sorted(self.estaciones, key=lambda estacion: estacion.get_ingresos(), reverse=True)
         return [estacion.descripcion() for estacion in ordenadas]
     
 

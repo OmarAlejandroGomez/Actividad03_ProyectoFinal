@@ -2,14 +2,13 @@
 class Viaje:
     
     def __init__(self, tarjeta, vehiculo, origen, destino, hora, valor, minutos):
-        self.set_tarjeta(tarjeta)
-        self.set_vehiculo(vehiculo)
-        self.set_origen(origen)
-        self.set_destino(destino)
-        self.set_hora(hora)
-        self.set_valor(valor)
-        self.set_minutos(minutos)
-    
+        self._tarjeta = tarjeta
+        self._vehiculo = vehiculo
+        self._origen = origen
+        self._destino = destino
+        self._hora = hora
+        self._valor = valor
+        self._minutos = minutos
     def get_tarjeta(self):
         return self._tarjeta
     
